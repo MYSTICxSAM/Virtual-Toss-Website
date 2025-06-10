@@ -9,7 +9,6 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    ;
 }
 
 .container{
@@ -22,6 +21,8 @@ body{
 button{
     padding: 1rem;
     background-color: skyblue;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
 #coin{

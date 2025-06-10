@@ -1,0 +1,88 @@
+
+body{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(premium_photo-1725408037993-f891474828c9.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    ;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button{
+    padding: 1rem;
+    background-color: skyblue;
+}
+
+#coin{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+    margin: 2rem 0rem;
+    transform-style: preserve-3d;
+}
+
+#coin div{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    background-size: contain;
+    position: absolute;
+}
+
+.headsClass{
+    background-image: url("front.png");
+}
+
+.animate-heads{
+    animation: flipHeads 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipHeads {
+
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(1800deg);
+    }
+    
+}
+
+.tailsClass{
+    background-image: url("back.png");
+
+    transform: rotateY(-180deg);
+
+}
+
+.animate-tails{
+    animation: flipTails 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flipTails {
+
+    from{
+        transform: rotateY(0deg);
+    }
+
+    to{
+        transform: rotateY(1620deg);
+    }
+    
+}
